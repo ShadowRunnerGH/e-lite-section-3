@@ -1,0 +1,237 @@
+body {
+  background-color: #f6f6f6;
+}
+form,
+.userInfo,
+.userInfoError {
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.mainHeader {
+  font-family: "Google Sans Display";
+  font-size: 2rem;
+  margin-bottom: 0.5%;
+}
+.group > * {
+  align-items: center;
+}
+.group label {
+  color: #333333;
+  font-family: "Google Sans Display";
+  letter-spacing: 1px;
+  font-weight: 900;
+}
+.group input {
+  justify-content: center;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+}
+.repos {
+  justify-content: center;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  transition: all 500ms;
+  cursor: default;
+}
+input[type="search"] {
+  outline: none;
+  font-family: "Josefin Sans";
+  font-size: 1.1rem;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+input[type="search"]:active {
+  border: default;
+}
+input[type="search"]::placeholder {
+  font-family: "Josefin Sans";
+  font-size: 1.1rem;
+  font-weight: "bold";
+}
+input[type="search"] {
+  padding-left: 40px;
+  font-size: 1.1rem;
+}
+.group .material-icons {
+  color: #000;
+  transform: translate(30px, 6.5px);
+}
+.userInfo,
+.repos,
+.userInfoError {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 0%;
+  background-color: white;
+  width: 500px;
+}
+.userInfoError {
+  padding-top: 7%;
+}
+.repos:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.userInfo img {
+  border-radius: 50%;
+  width: 25%;
+}
+.userInfo h3 {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-family: "Josefin Sans";
+  font-size: 2rem;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+}
+.userInfo a::before {
+  content: "@";
+  font-family: "Google Sans Display";
+}
+.userInfo a {
+  font-family: "Josefin Sans";
+  font-size: 1.2rem;
+  color: #2367ae;
+}
+.userInfo a:hover {
+  text-decoration: underline;
+}
+.userInfo p,
+.userInfoError p {
+  font-family: "Google Sans Display";
+  padding: 0 5% 0 5%;
+  justify-content: center;
+  color: #777777;
+}
+.userInfoError p {
+  margin-top: -20px;
+}
+.userInfoError h3,
+.loading h3 {
+  color: rgb(240, 60, 60);
+  font-size: 2rem;
+  font-family: "Josefin Sans";
+}
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #222222;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.userInfo,
+.userInfoError,
+.repos {
+  position: relative;
+  -webkit-animation: animatebottom 1s;
+  animation: animatebottom 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -150px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+.userInfoError {
+  background: none;
+}
+.repos {
+  max-width: 600px;
+  width: 45%;
+  border-radius: 5px;
+  padding: 1px 2% 1%;
+  font-family: "Google Sans Display";
+}
+.repos h4,
+.repos a {
+  color: #333333;
+  font-weight: bold;
+  text-decoration: none;
+}
+.repos .header .link {
+  padding-top: 3%;
+  padding-right: 0%;
+}
+.repos a {
+  border: 0.5px solid #aaaaaa;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  color: #777777;
+  transition: ease 100ms;
+}
+.repos a:hover {
+  border-color: #333333;
+  color: #333333;
+}
+.repos .header {
+  display: flex;
+  justify-content: space-between;
+}
+.repos p {
+  color: #777777;
+  width: auto;
+  text-decoration: none;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+.reposHide,
+.hide {
+  display: none;
+}
