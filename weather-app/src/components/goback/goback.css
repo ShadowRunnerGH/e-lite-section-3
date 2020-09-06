@@ -1,0 +1,15 @@
+.btnContainer {
+    display: flex;
+    justify-content: center;
+}
+.goback {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-family: "Google Sans Display";
+    font-size: 1.3rem;
+    padding: 10px;
+}

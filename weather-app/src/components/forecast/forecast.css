@@ -1,0 +1,51 @@
+.weatherForecast {
+  margin-left: 7%;
+  margin-top: -1%;
+  display: flex;
+  width: 90%;
+}
+.weatherForecast > * {
+  width: 12%;
+  margin-left: 1.5%;
+}
+.weatherForecast .forecast {
+  background-color: rgba(255, 255, 255, 0.12);
+  cursor: pointer;
+}
+.weatherForecast .forecast h3 {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  padding-left: 10px;
+}
+.weatherForecast .forecast img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.weatherForecast .forecast .temperature {
+  display: flex;
+  justify-content: space-between;
+}
+.weatherForecast .forecast .maxTemp,
+.weatherForecast .forecast .minTemp {
+  color: white;
+  font-weight: lighter;
+}
+.weatherForecast .forecast .maxTemp {
+  font-size: 2rem;
+  padding-left: 25px;
+}
+.weatherForecast .forecast .minTemp {
+  font-size: 1.3rem;
+  color: white;
+  padding-right: 25px;
+  padding-top: 14px;
+  opacity: 0.8;
+}
+.weatherForecast .forecast .maxTemp.short {
+  padding-left: 10%;
+}
+.weatherForecast .forecast .minTemp.short {
+  padding-left: 22%;
+}

@@ -1,0 +1,30 @@
+.group h1 {
+  text-align: center;
+  margin-right: 4%;
+  color: white;
+  font-family: "Google Sans Display";
+}
+.group {
+  margin-left: 6%;
+}
+.group form {
+  justify-content: center;
+  margin-right: 6%;
+  margin-bottom: 3%;
+  text-align: center;
+}
+.group .material-icons {
+  color: black;
+  transform: translate(30px, 6px);
+}
+.group input {
+  justify-content: center;
+  outline: none;
+  font-family: "Josefin Sans";
+  font-size: 1.1rem;
+  width: 400px;
+  padding: 10px 10px 10px 40px;
+}
+.group input::placeholder {
+  font-family: "Josefin Sans";
+}

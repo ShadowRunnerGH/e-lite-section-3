@@ -1,0 +1,32 @@
+.error {
+  background: none;
+  margin-top: 10%;
+}
+.error > * {
+  background: none;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: 0%;
+  background-color: white;
+  min-width: 200px;
+  width: 35%;
+}
+.error h1 {
+  background: none;
+  font-size: 2rem;
+  font-family: "Josefin Sans";
+  color: white;
+}
+.error p {
+  background: none;
+  font-family: "Google Sans Display";
+  margin-top: -50px;
+  justify-content: center;
+  color: white;
+}

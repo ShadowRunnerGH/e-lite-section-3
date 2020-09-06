@@ -1,0 +1,111 @@
+.currentForecast {
+  padding-left: 20px;
+}
+.currentWeather {
+  display: flex;
+  justify-content: center;
+}
+.weather {
+  text-decoration: none;
+  color: white !important;
+  cursor: default;
+}
+.weather .location,
+.weather .date {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.currentWeather .icon {
+  margin-top: 50px;
+  height: 170px;
+  padding: 0px;
+}
+.currentWeather .temperature {
+  font-weight: 100;
+  font-size: 120px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.weather .description {
+  font-size: 1.5rem;
+  margin-top: 0px;
+  text-align: center;
+  text-transform: capitalize;
+}
+.currentWeather .convertingButtons {
+  margin-top: 90px;
+  margin-bottom: 0px;
+}
+.currentWeather .convertingButtons .toCelsius,
+.currentWeather .convertingButtons .toFahrenheit {
+  display: block;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 20px 0 0 20px;
+  width: 25px;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  outline: none;
+  border: 1px solid transparent;
+}
+.currentWeather .convertingButtons .toCelsius {
+  padding-right: 20px;
+  margin-top: 0px;
+}
+.currentWeather .convertingButtons .toFahrenheit {
+  margin-top: 35px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+}
+.currentWeather .convertingButtons .toCelsius.active,
+.currentWeather .convertingButtons .toFahrenheit.active {
+  cursor: default;
+  pointer-events: none;
+  color: white;
+}
+.currentWeather .convertingButtons .toCelsius.active:hover,
+.currentWeather .convertingButtons .toFahrenheit.active:hover {
+  background: none;
+  border: 1px solid transparent;
+  outline: none;
+}
+.currentWeather .convertingButtons .toCelsius:hover,
+.currentWeather .convertingButtons .toFahrenheit:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid white;
+}
+.weather .extraInfo {
+  display: block;
+  margin-bottom: 60px;
+  width: 100%;
+  text-align: center;
+}
+.weather .extraInfo .row .windSpeed::after {
+  content: " km/h";
+}
+.weather .extraInfo .row .windSpeed.imperial::after {
+  content: " mph";
+}
+.weather .extraInfo .row .visibility::after {
+  content: " km";
+}
+.weather .extraInfo .row .visibility.imperial::after {
+  content: " mi";
+}
+.weather .extraInfo .row > * {
+  margin-left: 30px;
+}
+.weather .extraInfo .row2 .humidity,
+.weather .extraInfo .row2 .dewPoint {
+  margin-left: 60px;
+}
